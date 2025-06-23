@@ -1,0 +1,17 @@
+{
+  "name": "hello-express",
+  "version": "0.0.1",
+  "description": "A simple Node app using Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "body-parser": "^1.19.0",
+    "request": "^2.88.2"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
