@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  margin: 0; /* Remove default margin */
+   font-family: "Noto Sans",Calibri, Helvetica, sans-serif, "Lucida Sans";
+  }
+
+/* Set the width of .leaflet-container to 70% */
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+}
+
+#sidebar {
+  position: absolute;
+  max-height: 70%; /* Fixed height */
+  min-width: 30%; /* Minimum width */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  z-index: 1000;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px; /* Adjust the value as needed */
+  font-size: 20px;
+  border: 2px solid #ccc; /* Border style */
+  border-radius: 8px; /* Rounded corners */
+}
+
+#intro {
+  position: absolute;
+  display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px; /* Adjust the value as needed */
+  font-size: 20px;
+  border: 2px solid #ccc; /* Border style */
+  border-radius: 8px; /* Rounded corners */
+}
+
+
+/* Style for the text input */
+#textInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Style for the submit button */
+#submitButton, #tweetButton {
+  padding: 10px;
+  font-size: 16px;
+  background-color: red; /* Google blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+#submitButton:hover, #tweetButton:hover {
+  background-color: #357ae8; /* Darker Google blue */
+}
+
+/* Centering the button container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+#closeButton {
+   padding: 10px;
+  font-size: 16px;
+  background-color: red; /* Google blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#closeButton:hover {
+ background-color: #357ae8; /* Darker Google blue */
+}
+
+#leaderboardButton.leaderButton {
+   padding: 10px;
+  font-size: 16px;
+  background-color: blue; /* Google blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#leaderboardButton.leaderButton.hover {
+ background-color: #357ae8; /* Darker Google blue */
+}
+
+
+#answer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+#clicks {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 20px;
+  background-color: white;
+  padding: 20px;
+}
+
+#countryDisplay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  font-size: 20px;
+  background-color: white;
+  padding: 20px;
+}
+ /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 0.8em; /* Smaller size for screens less than 600px wide */
+            }
+            #answer {
+                justify-content: center; /* Center the content */
+            }
+        }
